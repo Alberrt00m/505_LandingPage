@@ -9,11 +9,11 @@
 <!-- Open Graph / redes sociales -->
 <meta property="og:title" content="505 — Miniserie">
 <meta property="og:description" content="Dos testigos. Una noche. Ninguna historia coincide.">
-<meta property="og:image" content="images/LOGO BLANCO.png">
+<meta property="og:image" content="images/logo.png">
 <meta property="og:type" content="website">
 
-<link rel="icon" type="image/png" href="images/LOGO BLANCO.png">
-<link rel="apple-touch-icon" href="images/LOGO BLANCO.png">
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="apple-touch-icon" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
 <header class="topnav" id="topnav">
   <div class="brand-group">
     <a href="#top" class="brand">
-      <img src="images/LOGO BLANCO.png" alt="505" class="brand-logo"> 
+      <img src="images/logo-mark.png" alt="505" class="brand-logo"> 
     </a>
     <div class="rec-badge" aria-hidden="true">
       <span class="rec-dot"></span>
@@ -40,7 +40,7 @@
     <a href="#sinopsis" class="tab" data-tab="sinopsis"><span class="tab-index">EXP. 01</span>SINOPSIS</a>
     <a href="#productores" class="tab" data-tab="productores"><span class="tab-index">EXP. 02</span>PRODUCTORES</a>
     <a href="#capitulos" class="tab" data-tab="capitulos"><span class="tab-index">EXP. 03</span>TEASERS Y CAPÍTULOS</a>
-    <a href="#audiovisuales" class="tab" data-tab="audiovisuales"><span class="tab-index">EXP. 04</span>AUDIOVISUALES</a>
+    <a href="#audiovisuales" class="tab" data-tab="audiovisuales"><span class="tab-index">EXP. 04</span>EVIDENCIA</a>
     <a href="#juego" class="tab" data-tab="juego"><span class="tab-index">EXP. 05</span>JUEGO</a>
     <a href="#enlaces" class="tab" data-tab="enlaces"><span class="tab-index">EXP. 06</span>REDES</a>
   </nav>
@@ -53,7 +53,7 @@
 <section class="hero" id="top">
   <div class="hero-inner">
     <p class="case-number">CASO N.º 505 · ARCHIVO ABIERTO</p>
-    <img src="images/LOGO BLANCO.png" alt="505 — Miniserie de suspenso" class="hero-logo">
+    <img src="images/logo-mark.png" alt="505 — Miniserie de suspenso" class="hero-logo">
     <p class="hero-tag">Dos testigos. Una noche. Ninguna historia coincide.</p>
     <a href="#sinopsis" class="scroll-cue">
       <span>ABRIR EXPEDIENTE</span>
@@ -167,30 +167,30 @@
       </span>
     </button>
 
-    <button class="tape-card" data-title="Una noche antes" data-tc="EP. 01" data-video="https://www.youtube.com/embed/hqK5-rL9k08">
+    <button class="tape-card" data-title="Capítulo 1" data-tc="EP. 01" data-video="https://www.youtube.com/embed/hqK5-rL9k08">
       <span class="tape-reel" aria-hidden="true"></span>
       <span class="tape-play">▶</span>
       <span class="tape-meta">
         <span class="tape-tc">EP. 01</span>
-        <span class="tape-title">Una noche antes</span>
+        <span class="tape-title">Primer Capítulo</span>
       </span>
     </button>
 
-    <button class="tape-card" data-title="Secretos" data-tc="EP. 02" data-video="https://www.youtube.com/embed/RIqh2KIfL8k">
+    <button class="tape-card locked" data-title="Próximo Capítulo" data-tc="EP. 02" data-video="">
       <span class="tape-reel" aria-hidden="true"></span>
-      <span class="tape-play">▶</span>
+      <span class="tape-play">🔒</span>
       <span class="tape-meta">
         <span class="tape-tc">EP. 02</span>
-        <span class="tape-title">Secretos</span>
+        <span class="tape-title">Próximamente</span>
       </span>
     </button>
 
-    <button class="tape-card" data-title="Final" data-tc="EP. 03" data-video="https://www.youtube.com/embed/G4UaqviM_Rk">
+    <button class="tape-card locked" data-title="Próximo Capítulo" data-tc="EP. 03" data-video="">
       <span class="tape-reel" aria-hidden="true"></span>
-      <span class="tape-play">▶</span>
+      <span class="tape-play">🔒</span>
       <span class="tape-meta">
         <span class="tape-tc">EP. 03</span>
-        <span class="tape-title">Final</span>
+        <span class="tape-title">Próximamente</span>
       </span>
     </button>
   </div>
@@ -200,19 +200,21 @@
 <section class="tapes-section" id="audiovisuales">
   <div class="section-head">
     <p class="doc-eyebrow">REGISTROS SONOROS · EVIDENCIA ADICIONAL</p>
-    <h2 class="section-title">Audiovisuales</h2>
+    <h2 class="section-title">Evidencia</h2>
   </div>
 
   <div class="audio-grid">
-    <!-- Reemplaza el href="#" con la URL real del soundtrack (Spotify/YouTube Music/etc.) -->
-    <a class="audio-card" href="#" target="_blank" rel="noopener noreferrer">
+    <div class="audio-card audio-card-player">
       <span class="audio-icon" aria-hidden="true">♫</span>
       <span class="audio-meta">
         <span class="audio-tc">SOUNDTRACK</span>
         <span class="audio-title">Banda Sonora Oficial</span>
+        <audio class="audio-player" controls preload="none">
+          <source src="audio/sountrack.mp3" type="audio/mpeg">
+          Tu navegador no soporta audio HTML5.
+        </audio>
       </span>
-      <svg class="audio-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.5"/></svg>
-    </a>
+    </div>
 
     <!-- Reemplaza el href="#" con la URL real del podcast (Spotify/Apple Podcasts/etc.) -->
     <a class="audio-card" href="#" target="_blank" rel="noopener noreferrer">
